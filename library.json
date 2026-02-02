@@ -1,0 +1,19 @@
+{
+  "name": "TaskManager",
+  "version": "1.0.0",
+  "description": "Easy and simple TaskManager for CH32V003 and WCH RISC-V MCUs.",
+  "keywords": ["task", "manager", "taskmanager", "CH32V003", "WCH", "RISC-V", "bare-metal"],
+  "authors": {
+    "name": "A. Kolesov",
+    "maintainer": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndyTakker/TaskManager.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/AndyTakker/TaskManager",
+  "frameworks": "*",
+  "platforms": ["wch-riscv"],
+  "headers": ["TaskManager.hpp"]
+}
