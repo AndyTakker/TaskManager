@@ -66,7 +66,7 @@ class TaskManager {
     for (uint8_t i = 0; i < MAX_TASKS; ++i) {
       Task &t = tasks[i];
       if (t.enabled && t.callback && (now - t.lastRun >= t.period)) {
-        t.lastRun = now; // важно обновить ДО вызова callback!
+        t.lastRun += t.period; // важно обновить ДО вызова callback!
         t.callback();
       }
     }
